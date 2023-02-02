@@ -1,4 +1,3 @@
-.card.card-body.mx-auto[style="width: 600px;"]
-  = form_with(url: verify_requests_path, local: true) do |f|
-    .text-center
-      = f.submit "Start Verification", class: "btn btn-primary"
+= form_with(url: verify_requests_path, local: true) do |f|
+  .text-center
+    = f.submit "Start Verification", class: "btn btn-primary"
