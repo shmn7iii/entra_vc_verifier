@@ -1,24 +1,3 @@
-# README
+# Entra VID Verifier
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Microsoft Entra Verified ID を検証する](https://www.shmn7iii.net/blog/verify-microsoft-entra-verified-id)
