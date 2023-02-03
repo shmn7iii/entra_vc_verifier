@@ -24,23 +24,23 @@ class CreatePresentationRequestService < BaseService
     data = {
       "includeQRCode": true,
       "callback": {
-        "url": 'https://entra-vid-verifier.onrender.com/callback',
+        "url": ENV['callback_url'],
         "state": 'Create',
         "headers": {
-          "api-key": 'hoge'
+          "api-key": 'hogehoge'
         }
       },
-      "authority": 'did:web:entra-vid-issuer.onrender.com',
+      "authority": ENV['did'],
       "registration": {
-        "clientName": 'entra_vid_verifier'
+        "clientName": ENV['client_name']
       },
       "requestedCredentials": [
         {
           "acceptedIssuers": [
-            'did:web:entra-vid-issuer.onrender.com'
+            ENV['did']
           ],
           "purpose": 'fuga',
-          "type": 'VerifiedCredentialSampleFeb2023'
+          "type": ENV['credential_type']
         }
       ]
     }.to_json
